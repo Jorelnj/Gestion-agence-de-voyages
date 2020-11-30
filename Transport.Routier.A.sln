@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport.logique", "Transp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frmtiket", "Frmtiket\Frmtiket.csproj", "{AFE6982D-EA10-441C-BD18-3DC83DDB8279}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionAgenceV", "..\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj", "{CE93A1CD-47D9-466C-ADFF-B292895688B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -53,9 +53,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtdepart = new System.Windows.Forms.TextBox();
             this.btnincrementation = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -292,28 +289,11 @@
             this.btnincrementation.UseVisualStyleBackColor = true;
             this.btnincrementation.Click += new System.EventHandler(this.btnincrementation_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(629, 254);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 156);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(613, 185);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(116, 24);
-            this.dateTimePicker1.TabIndex = 26;
-            // 
             // frmticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 625);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnincrementation);
             this.Controls.Add(this.txtdepart);
             this.Controls.Add(this.label11);
@@ -343,7 +323,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmticket";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,8 +355,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtdepart;
         private System.Windows.Forms.Button btnincrementation;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
