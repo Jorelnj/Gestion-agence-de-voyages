@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frmtiket", "Frmtiket\Frmtik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionAgenceV", "..\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj", "{CE93A1CD-47D9-466C-ADFF-B292895688B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parking", "..\niveau_deux\c#\parking_solution\parking\parking.csproj", "{F610480A-F664-440A-8BA3-338742DEF263}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F610480A-F664-440A-8BA3-338742DEF263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F610480A-F664-440A-8BA3-338742DEF263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F610480A-F664-440A-8BA3-338742DEF263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F610480A-F664-440A-8BA3-338742DEF263}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
