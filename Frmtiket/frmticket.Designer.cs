@@ -44,7 +44,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtprix = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtsierge = new System.Windows.Forms.TextBox();
+            this.txtsiege = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtarriver = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,7 +52,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtdepart = new System.Windows.Forms.TextBox();
-            this.btnincrementation = new System.Windows.Forms.Button();
+            this.txtTelephone = new System.Windows.Forms.TextBox();
+            this.lblTel = new System.Windows.Forms.Label();
+            this.txtRemboussement = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -77,11 +80,11 @@
             // btncancel
             // 
             this.btncancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btncancel.Location = new System.Drawing.Point(321, 380);
+            this.btncancel.Location = new System.Drawing.Point(431, 318);
             this.btncancel.Margin = new System.Windows.Forms.Padding(4);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(248, 50);
-            this.btncancel.TabIndex = 11;
+            this.btncancel.Size = new System.Drawing.Size(483, 131);
+            this.btncancel.TabIndex = 13;
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = true;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -124,16 +127,16 @@
             // 
             // txtcni
             // 
-            this.txtcni.Location = new System.Drawing.Point(114, 280);
+            this.txtcni.Location = new System.Drawing.Point(431, 192);
             this.txtcni.Margin = new System.Windows.Forms.Padding(4);
             this.txtcni.Name = "txtcni";
             this.txtcni.Size = new System.Drawing.Size(148, 24);
-            this.txtcni.TabIndex = 3;
+            this.txtcni.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 286);
+            this.label4.Location = new System.Drawing.Point(331, 198);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 18);
@@ -142,16 +145,16 @@
             // 
             // txtsexe
             // 
-            this.txtsexe.Location = new System.Drawing.Point(114, 334);
+            this.txtsexe.Location = new System.Drawing.Point(114, 272);
             this.txtsexe.Margin = new System.Windows.Forms.Padding(4);
             this.txtsexe.Name = "txtsexe";
             this.txtsexe.Size = new System.Drawing.Size(148, 24);
-            this.txtsexe.TabIndex = 4;
+            this.txtsexe.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 340);
+            this.label5.Location = new System.Drawing.Point(14, 275);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 18);
@@ -161,27 +164,28 @@
             // btnsave
             // 
             this.btnsave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnsave.Location = new System.Drawing.Point(13, 380);
+            this.btnsave.Location = new System.Drawing.Point(3, 314);
             this.btnsave.Margin = new System.Windows.Forms.Padding(4);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(249, 50);
-            this.btnsave.TabIndex = 10;
+            this.btnsave.Size = new System.Drawing.Size(420, 135);
+            this.btnsave.TabIndex = 12;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtobservation
             // 
-            this.txtobservation.Location = new System.Drawing.Point(418, 334);
+            this.txtobservation.Location = new System.Drawing.Point(776, 286);
             this.txtobservation.Margin = new System.Windows.Forms.Padding(4);
             this.txtobservation.Name = "txtobservation";
             this.txtobservation.Size = new System.Drawing.Size(148, 24);
-            this.txtobservation.TabIndex = 9;
+            this.txtobservation.TabIndex = 11;
+            this.txtobservation.TextChanged += new System.EventHandler(this.txtobservation_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(318, 340);
+            this.label6.Location = new System.Drawing.Point(676, 286);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 18);
@@ -190,34 +194,34 @@
             // 
             // txtprix
             // 
-            this.txtprix.Location = new System.Drawing.Point(418, 280);
+            this.txtprix.Location = new System.Drawing.Point(776, 195);
             this.txtprix.Margin = new System.Windows.Forms.Padding(4);
             this.txtprix.Name = "txtprix";
             this.txtprix.Size = new System.Drawing.Size(148, 24);
-            this.txtprix.TabIndex = 8;
+            this.txtprix.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(318, 286);
+            this.label7.Location = new System.Drawing.Point(676, 195);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 18);
             this.label7.TabIndex = 19;
             this.label7.Text = "prix ticket";
             // 
-            // txtsierge
+            // txtsiege
             // 
-            this.txtsierge.Location = new System.Drawing.Point(418, 228);
-            this.txtsierge.Margin = new System.Windows.Forms.Padding(4);
-            this.txtsierge.Name = "txtsierge";
-            this.txtsierge.Size = new System.Drawing.Size(148, 24);
-            this.txtsierge.TabIndex = 7;
+            this.txtsiege.Location = new System.Drawing.Point(776, 146);
+            this.txtsiege.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsiege.Name = "txtsiege";
+            this.txtsiege.Size = new System.Drawing.Size(148, 24);
+            this.txtsiege.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(318, 234);
+            this.label8.Location = new System.Drawing.Point(676, 152);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 18);
@@ -226,16 +230,16 @@
             // 
             // txtarriver
             // 
-            this.txtarriver.Location = new System.Drawing.Point(418, 186);
+            this.txtarriver.Location = new System.Drawing.Point(431, 275);
             this.txtarriver.Margin = new System.Windows.Forms.Padding(4);
             this.txtarriver.Name = "txtarriver";
             this.txtarriver.Size = new System.Drawing.Size(148, 24);
-            this.txtarriver.TabIndex = 6;
+            this.txtarriver.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(318, 192);
+            this.label9.Location = new System.Drawing.Point(331, 281);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 18);
@@ -248,14 +252,14 @@
             this.txtnumerotckit.Margin = new System.Windows.Forms.Padding(4);
             this.txtnumerotckit.Name = "txtnumerotckit";
             this.txtnumerotckit.ReadOnly = true;
-            this.txtnumerotckit.Size = new System.Drawing.Size(351, 24);
+            this.txtnumerotckit.Size = new System.Drawing.Size(478, 24);
             this.txtnumerotckit.TabIndex = 14;
             this.txtnumerotckit.TextChanged += new System.EventHandler(this.txtnumerotckit_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(318, 146);
+            this.label10.Location = new System.Drawing.Point(331, 234);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 18);
@@ -274,35 +278,64 @@
             // 
             // txtdepart
             // 
-            this.txtdepart.Location = new System.Drawing.Point(418, 143);
+            this.txtdepart.Location = new System.Drawing.Point(431, 231);
             this.txtdepart.Margin = new System.Windows.Forms.Padding(4);
             this.txtdepart.Name = "txtdepart";
             this.txtdepart.Size = new System.Drawing.Size(148, 24);
-            this.txtdepart.TabIndex = 5;
+            this.txtdepart.TabIndex = 6;
             // 
-            // btnincrementation
+            // txtTelephone
             // 
-            this.btnincrementation.Location = new System.Drawing.Point(608, 102);
-            this.btnincrementation.Name = "btnincrementation";
-            this.btnincrementation.Size = new System.Drawing.Size(99, 24);
-            this.btnincrementation.TabIndex = 24;
-            this.btnincrementation.Text = "Ajouter";
-            this.btnincrementation.UseVisualStyleBackColor = true;
-            this.btnincrementation.Click += new System.EventHandler(this.btnincrementation_Click);
+            this.txtTelephone.Location = new System.Drawing.Point(431, 146);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(148, 24);
+            this.txtTelephone.TabIndex = 4;
+            // 
+            // lblTel
+            // 
+            this.lblTel.AutoSize = true;
+            this.lblTel.Location = new System.Drawing.Point(331, 146);
+            this.lblTel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(77, 18);
+            this.lblTel.TabIndex = 25;
+            this.lblTel.Text = "Télèphone";
+            // 
+            // txtRemboussement
+            // 
+            this.txtRemboussement.Location = new System.Drawing.Point(776, 234);
+            this.txtRemboussement.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRemboussement.Name = "txtRemboussement";
+            this.txtRemboussement.Size = new System.Drawing.Size(148, 24);
+            this.txtRemboussement.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(632, 237);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(122, 18);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Remboussement";
             // 
             // frmticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1346, 625);
-            this.Controls.Add(this.btnincrementation);
+            this.ClientSize = new System.Drawing.Size(1089, 592);
+            this.Controls.Add(this.txtRemboussement);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtTelephone);
+            this.Controls.Add(this.lblTel);
             this.Controls.Add(this.txtdepart);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtobservation);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtprix);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtsierge);
+            this.Controls.Add(this.txtsiege);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtarriver);
             this.Controls.Add(this.label9);
@@ -323,7 +356,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmticket";
-            this.Text = "Form1";
+            this.Text = "z";
+            this.Load += new System.EventHandler(this.frmticket_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,7 +381,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtprix;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtsierge;
+        private System.Windows.Forms.TextBox txtsiege;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtarriver;
         private System.Windows.Forms.Label label9;
@@ -355,7 +389,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtdepart;
-        private System.Windows.Forms.Button btnincrementation;
+        private System.Windows.Forms.TextBox txtTelephone;
+        private System.Windows.Forms.Label lblTel;
+        private System.Windows.Forms.TextBox txtRemboussement;
+        private System.Windows.Forms.Label label12;
     }
 }
 

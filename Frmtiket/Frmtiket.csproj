@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj">
+      <Project>{ce93a1cd-47d9-466c-adff-b292895688b5}</Project>
+      <Name>GestionAgenceV</Name>
+    </ProjectReference>
     <ProjectReference Include="..\tiket.de.transport\tiket_transport.csproj">
       <Project>{255E93B8-9355-4319-A6FF-3FA3CF9911A2}</Project>
       <Name>tiket_transport</Name>

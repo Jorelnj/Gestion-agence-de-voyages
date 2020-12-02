@@ -36,10 +36,19 @@ namespace Frmtiket
             {
                 Tiket tiket = new Tiket
                 (
-                txtnom.Text, txtprenom.Text,
-                txtage.Text, txtcni.Text, txtdepart.Text,
-                txtarriver.Text, float.Parse(txtprix.Text),
-                txtsierge.Text
+                txtnom.Text,
+                txtprenom.Text,
+                txtage.Text, 
+                txtcni.Text,
+                txtdepart.Text,
+                txtarriver.Text,
+                float.Parse(txtprix.Text),
+                txtsexe.Text,
+                txtTelephone.Text,
+                txtsiege.Text,
+                 float.Parse(txtRemboussement.Text)
+
+
                 );
                 tiketlogique tiketlogique = new tiketlogique();
                 tiketlogique.creationTiket(tiket);
@@ -61,7 +70,13 @@ namespace Frmtiket
                 txtdepart.Clear();
                 txtage.Clear();
                 txtprix.Clear();
+                txtsexe.Clear();
                 txtnom.Focus();
+                txtTelephone.Clear();
+                txtRemboussement.Clear();
+                txtsiege.Clear();
+                txtarriver.Clear();
+                txtobservation.Clear();
             }
             catch(Exception h)
             {
@@ -95,5 +110,14 @@ namespace Frmtiket
 
         }
 
+        private void frmticket_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtobservation_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
