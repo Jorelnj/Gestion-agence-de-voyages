@@ -18,6 +18,9 @@ namespace Frmtiket
         public frmticket()
         {
             InitializeComponent();
+            int b = 0;
+            boucle();
+            txtnumerotckit.Text = "N°000" + b.ToString() + a.ToString();
         }
         public int boucle()
         {
@@ -28,7 +31,6 @@ namespace Frmtiket
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-           
             
             try
             {
@@ -48,6 +50,10 @@ namespace Frmtiket
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                     );
+                int b = 0;
+                boucle();
+                txtnumerotckit.Text = "N°000" + b.ToString() + a.ToString();
+
                 txtnom.Clear();
                 txtprenom.Clear();
                 txtage.Clear();

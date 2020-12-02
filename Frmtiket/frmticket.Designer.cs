@@ -247,6 +247,7 @@
             this.txtnumerotckit.Location = new System.Drawing.Point(250, 102);
             this.txtnumerotckit.Margin = new System.Windows.Forms.Padding(4);
             this.txtnumerotckit.Name = "txtnumerotckit";
+            this.txtnumerotckit.ReadOnly = true;
             this.txtnumerotckit.Size = new System.Drawing.Size(351, 24);
             this.txtnumerotckit.TabIndex = 14;
             this.txtnumerotckit.TextChanged += new System.EventHandler(this.txtnumerotckit_TextChanged);
