@@ -32,11 +32,20 @@ namespace Transport.Routier
                 string ville_arriver = Console.ReadLine();
                 Console.Write("Entrer prix_tiket\t:");
                 float prix_tiket = float.Parse(Console.ReadLine());
-                Console.Write("Entrer  numero_place\t:");
-                string numero_place = Console.ReadLine();
+                Console.Write("Entrer  sexe\t:");
+                string sexe = Console.ReadLine();
+                Console.Write("Entrer  siege\t:");
+                string siege = Console.ReadLine();
+                Console.Write("Entrer  Telephone\t:");
+                float Telephone = float.Parse(Console.ReadLine());
+                string Remboussement = Console.ReadLine();
+                Console.Write("Entrer Le_Remboussement\t:");
 
 
-                Tiket tiket = new Tiket(Nom, Prenom, Age, numero_CNI, ville_de_depart, ville_arriver, prix_tiket, numero_place);
+
+
+
+                Tiket tiket = new Tiket(Nom, Prenom, Age, numero_CNI, ville_de_depart, ville_arriver, prix_tiket, sexe, siege, Remboussement, Telephone);
                 tiketlogique tiketlogique = new tiketlogique();
                 tiketlogique.creationTiket(tiket);
 

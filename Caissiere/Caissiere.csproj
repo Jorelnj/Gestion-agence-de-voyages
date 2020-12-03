@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0927403-1366-46E5-A970-E5EA34D7D6BA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Transport.Routier</RootNamespace>
-    <AssemblyName>Transport.Routier</AssemblyName>
+    <ProjectGuid>{D42A9DA9-00AD-48F0-B3C9-D55F503FBCE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Caissiere</RootNamespace>
+    <AssemblyName>Caissiere</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,29 +45,62 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enregistrementcassier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enregistrementcassier.Designer.cs">
+      <DependentUpon>Enregistrementcassier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Enregistrementcassier.resx">
+      <DependentUpon>Enregistrementcassier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infosave.tiket\Infosave.tiket.csproj">
-      <Project>{27e3fd48-949c-40e6-8606-083889a85f73}</Project>
-      <Name>Infosave.tiket</Name>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\caissiereclass\caissiereclass.csproj">
+      <Project>{d409d571-2ecc-4abc-af87-860912c2c401}</Project>
+      <Name>caissiereclass</Name>
     </ProjectReference>
-    <ProjectReference Include="..\tiket.de.transport\tiket_transport.csproj">
-      <Project>{255e93b8-9355-4319-a6ff-3fa3cf9911a2}</Project>
-      <Name>tiket_transport</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Transport.logique\Transport.logique.csproj">
-      <Project>{60704815-f72e-4634-ada2-f15953fde55e}</Project>
-      <Name>Transport.logique</Name>
+    <ProjectReference Include="..\caissierlogique\caissierlogique.csproj">
+      <Project>{db21a23c-59f8-4e59-b934-cb5d5fa7ac5a}</Project>
+      <Name>caissierlogique</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

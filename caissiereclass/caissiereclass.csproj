@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0927403-1366-46E5-A970-E5EA34D7D6BA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Transport.Routier</RootNamespace>
-    <AssemblyName>Transport.Routier</AssemblyName>
+    <ProjectGuid>{D409D571-2ECC-4ABC-AF87-860912C2C401}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>caissiereclass</RootNamespace>
+    <AssemblyName>caissiereclass</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -49,26 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Ccaissiere.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Infosave.tiket\Infosave.tiket.csproj">
-      <Project>{27e3fd48-949c-40e6-8606-083889a85f73}</Project>
-      <Name>Infosave.tiket</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\tiket.de.transport\tiket_transport.csproj">
-      <Project>{255e93b8-9355-4319-a6ff-3fa3cf9911a2}</Project>
-      <Name>tiket_transport</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Transport.logique\Transport.logique.csproj">
-      <Project>{60704815-f72e-4634-ada2-f15953fde55e}</Project>
-      <Name>Transport.logique</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

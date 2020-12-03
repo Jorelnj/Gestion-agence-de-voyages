@@ -78,7 +78,7 @@ namespace Frmtiket
                 txtarriver.Clear();
                 txtobservation.Clear();
             }
-            catch(Exception h)
+            catch(Exception)
             {
 
             }
