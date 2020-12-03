@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tiket_transport
+namespace ticket_transport
 {
     [Serializable]
     public class Ticket
@@ -16,7 +16,7 @@ namespace tiket_transport
             public string numero_CNI { get; set; }
             public string ville_de_Depart { get; set; }
             public string ville_Arriver { get; set; }
-            public float prix_tiket { get; set; }
+            public float prix_ticket { get; set; }
             public string Sexe { get; set; }
             public string Telephone { get; set; }
             public string Siege { get; set; }
@@ -31,7 +31,7 @@ namespace tiket_transport
             }
 
         public Ticket(string nom, string prenom, string age, string numero_CNI,
-            string ville_de_Depart, string ville_Arriver, float prix_tiket, string sexe, string telephone, string siege, float remboussement)
+            string ville_de_Depart, string ville_Arriver, float prix_ticket, string sexe, string telephone, string siege, float remboussement)
         {
             Nom = nom;
             Prenom = prenom;
@@ -39,7 +39,7 @@ namespace tiket_transport
             this.numero_CNI = numero_CNI;
             this.ville_de_Depart = ville_de_Depart;
             this.ville_Arriver = ville_Arriver;
-            this.prix_tiket = prix_tiket;
+            this.prix_ticket = prix_ticket;
             Sexe = sexe;
             Telephone = telephone;
             Siege = siege;
@@ -48,8 +48,8 @@ namespace tiket_transport
 
         public override bool Equals(object obj)
             {
-                return obj is Ticket tiket &&
-                       numero_CNI == tiket.numero_CNI;
+                return obj is Ticket ticket &&
+                       numero_CNI == ticket.numero_CNI;
             }
 
             public override int GetHashCode()

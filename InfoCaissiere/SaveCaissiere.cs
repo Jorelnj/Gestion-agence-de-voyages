@@ -11,7 +11,7 @@ namespace InfoCaissiere
 {
     public class SaveCaissiere
     {
-        public static List<Ccaissiere> caissieres;
+        public static List<Caissiere> caissieres;
         private FileInfo file;
         private const string FILE_Name = @"data/Tickets.json";
 
@@ -35,19 +35,19 @@ namespace InfoCaissiere
                 using (StreamReader sr = new StreamReader(file.FullName))
                 {
                     string json = sr.ReadToEnd();
-                    caissieres = JsonConvert.DeserializeObject<List<Ccaissiere>>(json);
+                    caissieres = JsonConvert.DeserializeObject<List<Caissiere>>(json);
                 }
             }
 
             if (caissieres == null)
             {
-                caissieres = new List<Ccaissiere>();
+                caissieres = new List<Caissiere>();
             }
         }
 
-        public void Add(Ccaissiere tiket)
+        public void Add(Caissiere ticket)
         {
-            caissieres.Add(tiket);
+            caissieres.Add(ticket);
             Save();
         }
 
@@ -60,15 +60,15 @@ namespace InfoCaissiere
             }
         }
 
-        public void Delete(Ccaissiere caissiere)
+        public void Delete(Caissiere caissiere)
         {
             caissieres.Remove(caissiere);
             Save();
         }
 
-        public IEnumerable<Ccaissiere> Find()
+        public IEnumerable<Caissiere> Find()
         {
-            return new List<Ccaissiere>(caissieres);
+            return new List<Caissiere>(caissieres);
         }
     }
 }

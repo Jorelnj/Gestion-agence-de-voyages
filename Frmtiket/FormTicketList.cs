@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frmtiket
+namespace Frmticket
 {
     public partial class FormTicketList : Form
     {
@@ -30,7 +30,7 @@ namespace Frmtiket
         private void loadData()
         {
             string value = txtSearch.Text.ToLower();
-            var tikets = productBLO.GetBy
+            var tickets = productBLO.GetBy
             (
                 x =>
                 x.Reference.ToLower().Contains(value) ||

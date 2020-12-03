@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using tiket_transport;
+using ticket_transport;
 using Transport.logique;
 
-namespace Frmtiket
+namespace Frmticket
 {
     public partial class FrmTicket : Form
     {
@@ -30,21 +30,21 @@ namespace Frmtiket
             this.callBack = callBack;
         }
 
-        public FrmTicket(Ticket tiket, Action callBack) : this(callBack)
+        public FrmTicket(Ticket ticket, Action callBack) : this(callBack)
         {
-            this.oldTicket = tiket;
-            txtnom.Text = tiket.Nom;
-            txtprenom.Text = tiket.Prenom;
-            txtage.Text = tiket.Age;
-            txtsexe.Text = tiket.Sexe;
-            txtTelephone.Text = tiket.Telephone;
-            txtcni.Text = tiket.numero_CNI;
-            txtdepart.Text = tiket.ville_de_Depart;
-            txtarriver.Text = tiket.ville_Arriver;
-            txtsiege.Text = tiket.Siege;
-            txtprix.Text = tiket.prix_tiket.ToString();
-            txtRemboussement.Text = tiket.Remboussement.ToString();
-            txtobservation.Text = tiket.Observation;
+            this.oldTicket = ticket;
+            txtnom.Text = ticket.Nom;
+            txtprenom.Text = ticket.Prenom;
+            txtage.Text = ticket.Age;
+            txtsexe.Text = ticket.Sexe;
+            txtTelephone.Text = ticket.Telephone;
+            txtcni.Text = ticket.numero_CNI;
+            txtdepart.Text = ticket.ville_de_Depart;
+            txtarriver.Text = ticket.ville_Arriver;
+            txtsiege.Text = ticket.Siege;
+            txtprix.Text = ticket.prix_ticket.ToString();
+            txtRemboussement.Text = ticket.Remboussement.ToString();
+            txtobservation.Text = ticket.Observation;
 
         }
 
@@ -60,7 +60,7 @@ namespace Frmtiket
             
             try
             {
-                Ticket tiket = new Ticket
+                Ticket ticket = new Ticket
                 (
                 txtnom.Text,
                 txtprenom.Text,
@@ -76,8 +76,8 @@ namespace Frmtiket
 
 
                 );
-                tiketlogique tiketlogique = new tiketlogique();
-                tiketlogique.creationTicket(tiket);
+                ticketlogique ticketlogique = new ticketlogique();
+                ticketlogique.creationTicket(ticket);
                 MessageBox.Show
                 (
                     "sauvegarde reussit!",

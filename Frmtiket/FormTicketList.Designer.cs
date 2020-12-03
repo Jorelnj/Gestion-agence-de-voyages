@@ -1,5 +1,5 @@
 ﻿
-namespace Frmtiket
+namespace Frmticket
 {
     partial class FormTicketList
     {
@@ -106,7 +106,7 @@ namespace Frmtiket
             // 
             // Column7
             // 
-            this.Column7.DataPropertyName = "prix_tiket";
+            this.Column7.DataPropertyName = "prix_ticket";
             this.Column7.HeaderText = "PRIX TICKET";
             this.Column7.Name = "Column7";
             // 

@@ -25,7 +25,7 @@ using caissiereclass;
         {
             try
             {
-                Ccaissiere caissiere = new Ccaissiere
+                Caissiere caissiere = new Caissiere
                 (
                 txtNom.Text,
                 txtPrenom.Text,

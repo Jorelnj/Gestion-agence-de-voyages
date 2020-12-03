@@ -1,33 +1,33 @@
-﻿using Infosave.tiket;
+﻿using Infosave.ticket;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using tiket_transport;
+using ticket_transport;
 
 namespace Transport.logique
 {
-    public class tiketlogique
+    public class ticketlogique
     {
-        savetiket tiketrepo;
-        public tiketlogique()
+        saveTicket ticketrepo;
+        public ticketlogique()
         {
-            tiketrepo = new savetiket();
+            ticketrepo = new saveTicket();
         }
-    public void creationTicket(Ticket tiket)
+    public void creationTicket(Ticket ticket)
         {
-            tiketrepo.Add(tiket);
+            ticketrepo.Add(ticket);
         }
 
-        public void supprimerTicket(Ticket tiket)
+        public void SupprimerTicket(Ticket ticket)
         {
-            tiketrepo.Delete(tiket);
+            ticketrepo.Delete(ticket);
         }
 
         public IEnumerable<Ticket> GetAllTicket()
         {
-           return tiketrepo.Find();
+           return ticketrepo.Find();
         }
     }
 }

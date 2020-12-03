@@ -7,18 +7,18 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using tiket_transport;
+using ticket_transport;
 
-namespace Infosave.tiket
+namespace Infosave.ticket
 {
-    public class savetiket
+    public class saveTicket
     {
         public static List<Ticket> Tickets;
         private  FileInfo file;
         private const string FILE_Name = @"data/Tickets.json";
       
 
-        public savetiket()
+        public saveTicket()
         {
             file = new FileInfo(FILE_Name);
             if (!file.Directory.Exists)
@@ -47,9 +47,9 @@ namespace Infosave.tiket
             }
         }
         
-        public void Add(Ticket tiket)
+        public void Add(Ticket ticket)
         {
-            Tickets.Add(tiket);
+            Tickets.Add(ticket);
            Save();
         }
 
@@ -62,9 +62,9 @@ namespace Infosave.tiket
             }
         }
 
-        public void Delete (Ticket tiket)
+        public void Delete (Ticket ticket)
         {
-            Tickets.Remove(tiket);
+            Tickets.Remove(ticket);
             Save();
         }
 

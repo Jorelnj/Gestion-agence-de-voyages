@@ -1,4 +1,4 @@
-﻿namespace Frmtiket
+﻿namespace Frmticket
 {
     partial class FrmTicket
     {

@@ -7,17 +7,17 @@ using System.Threading.Tasks;
   namespace caissiereclass
 {
     [Serializable]
-    public class Ccaissiere
+    public class Caissiere
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public string Telephone { get; set; }
 
-        public Ccaissiere()
+        public Caissiere()
         {
         }
 
-        public Ccaissiere(string nom, string prenom, string telephone)
+        public Caissiere(string nom, string prenom, string telephone)
         {
             Nom = nom;
             Prenom = prenom;

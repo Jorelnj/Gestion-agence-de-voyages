@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Frmtiket.Properties
+namespace Frmticket.Properties
 {
 
 
