@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace tiket_transport
 {
     [Serializable]
-    public class Tiket
+    public class Ticket
     {
 
             public string Nom { get; set; }
@@ -20,16 +20,17 @@ namespace tiket_transport
             public string Sexe { get; set; }
             public string Telephone { get; set; }
             public string Siege { get; set; }
+            public string Observation { get; set; }
             public float Remboussement { get; set; }
            
             
 
-            public Tiket()//pour la serialisation
+            public Ticket()//pour la serialisation
             {
 
             }
 
-        public Tiket(string nom, string prenom, string age, string numero_CNI,
+        public Ticket(string nom, string prenom, string age, string numero_CNI,
             string ville_de_Depart, string ville_Arriver, float prix_tiket, string sexe, string telephone, string siege, float remboussement)
         {
             Nom = nom;
@@ -47,7 +48,7 @@ namespace tiket_transport
 
         public override bool Equals(object obj)
             {
-                return obj is Tiket tiket &&
+                return obj is Ticket tiket &&
                        numero_CNI == tiket.numero_CNI;
             }
 

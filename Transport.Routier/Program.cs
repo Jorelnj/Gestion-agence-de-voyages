@@ -45,13 +45,13 @@ namespace Transport.Routier
 
 
 
-                Tiket tiket = new Tiket(Nom, Prenom, Age, numero_CNI, ville_de_depart, ville_arriver, prix_tiket, sexe, siege, Remboussement, Telephone);
+                Ticket tiket = new Ticket(Nom, Prenom, Age, numero_CNI, ville_de_depart, ville_arriver, prix_tiket, sexe, siege, Remboussement, Telephone);
                 tiketlogique tiketlogique = new tiketlogique();
-                tiketlogique.creationTiket(tiket);
+                tiketlogique.creationTicket(tiket);
 
 
-                IEnumerable<Tiket> tikets = tiketlogique.GetAllTiket();
-                foreach (Tiket T in tikets)
+                IEnumerable<Ticket> tikets = tiketlogique.GetAllTicket();
+                foreach (Ticket T in tikets)
                 {
                     Console.WriteLine($"{T.Nom}\t\n {T.Prenom}\t\n");
                 }

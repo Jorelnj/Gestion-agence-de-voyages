@@ -52,16 +52,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmticket.cs">
+    <Compile Include="FormTicketList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmticket.Designer.cs">
-      <DependentUpon>frmticket.cs</DependentUpon>
+    <Compile Include="FormTicketList.Designer.cs">
+      <DependentUpon>FormTicketList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTicket.Designer.cs">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmticket.resx">
-      <DependentUpon>frmticket.cs</DependentUpon>
+    <EmbeddedResource Include="FormTicketList.resx">
+      <DependentUpon>FormTicketList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTicket.resx">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

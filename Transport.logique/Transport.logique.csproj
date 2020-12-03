@@ -51,9 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infosave.tiket\Infosave.tiket.csproj">
+    <ProjectReference Include="..\Infosave.tiket\InfoSaveTicket.csproj">
       <Project>{27e3fd48-949c-40e6-8606-083889a85f73}</Project>
-      <Name>Infosave.tiket</Name>
+      <Name>InfoSaveTicket</Name>
     </ProjectReference>
     <ProjectReference Include="..\tiket.de.transport\tiket_transport.csproj">
       <Project>{255e93b8-9355-4319-a6ff-3fa3cf9911a2}</Project>

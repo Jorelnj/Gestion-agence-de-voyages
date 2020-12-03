@@ -15,17 +15,17 @@ namespace Transport.logique
         {
             tiketrepo = new savetiket();
         }
-    public void creationTiket(Tiket tiket)
+    public void creationTicket(Ticket tiket)
         {
             tiketrepo.Add(tiket);
         }
 
-        public void supprimerTiket(Tiket tiket)
+        public void supprimerTicket(Ticket tiket)
         {
             tiketrepo.Delete(tiket);
         }
 
-        public IEnumerable<Tiket> GetAllTiket()
+        public IEnumerable<Ticket> GetAllTicket()
         {
            return tiketrepo.Find();
         }

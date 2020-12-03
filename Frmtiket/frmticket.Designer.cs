@@ -1,6 +1,6 @@
 ﻿namespace Frmtiket
 {
-    partial class frmticket
+    partial class FrmTicket
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

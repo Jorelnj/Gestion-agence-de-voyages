@@ -13,7 +13,7 @@ namespace InfoCaissiere
     {
         public static List<Ccaissiere> caissieres;
         private FileInfo file;
-        private const string FILE_Name = @"data/Tikets.json";
+        private const string FILE_Name = @"data/Tickets.json";
 
 
         public SaveCaissiere()
