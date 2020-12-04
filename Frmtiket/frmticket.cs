@@ -12,16 +12,42 @@ using Transport.logique;
 
 namespace Frmtiket
 {
-    public partial class frmticket : Form
+    public partial class FrmTicket : Form
     {
+        private Action callBack;
         private int a = 0;
-        public frmticket()
+        private Ticket oldTicket;
+        public FrmTicket()
         {
             InitializeComponent();
             int b = 0;
             boucle();
             txtnumerotckit.Text = "N°000" + b.ToString() + a.ToString();
         }
+
+        public FrmTicket(Action callBack) : this()
+        {
+            this.callBack = callBack;
+        }
+
+        public FrmTicket(Ticket tiket, Action callBack) : this(callBack)
+        {
+            this.oldTicket = tiket;
+            txtnom.Text = tiket.Nom;
+            txtprenom.Text = tiket.Prenom;
+            txtage.Text = tiket.Age;
+            txtsexe.Text = tiket.Sexe;
+            txtTelephone.Text = tiket.Telephone;
+            txtcni.Text = tiket.numero_CNI;
+            txtdepart.Text = tiket.ville_de_Depart;
+            txtarriver.Text = tiket.ville_Arriver;
+            txtsiege.Text = tiket.Siege;
+            txtprix.Text = tiket.prix_tiket.ToString();
+            txtRemboussement.Text = tiket.Remboussement.ToString();
+            txtobservation.Text = tiket.Observation;
+
+        }
+
         public int boucle()
         {
             a++;
@@ -34,7 +60,7 @@ namespace Frmtiket
             
             try
             {
-                Tiket tiket = new Tiket
+                Ticket tiket = new Ticket
                 (
                 txtnom.Text,
                 txtprenom.Text,
@@ -51,14 +77,15 @@ namespace Frmtiket
 
                 );
                 tiketlogique tiketlogique = new tiketlogique();
-                tiketlogique.creationTiket(tiket);
+                tiketlogique.creationTicket(tiket);
                 MessageBox.Show
-                    (
+                (
                     "sauvegarde reussit!",
                     "configuration",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
-                    );
+                );
+
                 int b = 0;
                 boucle();
                 txtnumerotckit.Text = "N°000" + b.ToString() + a.ToString();

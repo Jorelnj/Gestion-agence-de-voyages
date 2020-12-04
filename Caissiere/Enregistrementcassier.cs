@@ -13,9 +13,9 @@ using caissiereclass;
 
  namespace Caissiere
 {
-    public partial class Enregistrementcassier : Form
+    public partial class EnregistrementCassier : Form
     {
-        public Enregistrementcassier()
+        public EnregistrementCassier()
         {
             InitializeComponent();
           
@@ -31,8 +31,8 @@ using caissiereclass;
                 txtPrenom.Text,
                 txtTelephone.Text
                 );
-                Logiquecaissiere Logiquecaissiere = new Logiquecaissiere();
-                Logiquecaissiere.creationTiket(caissiere);
+                LogiqueCaissiere Logiquecaissiere = new LogiqueCaissiere();
+                Logiquecaissiere.creationTicket(caissiere);
                 MessageBox.Show
                     (
                     "sauvegarde reussit!",

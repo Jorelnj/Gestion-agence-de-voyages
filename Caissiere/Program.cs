@@ -16,7 +16,7 @@ namespace Caissiere
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Enregistrementcassier());
+            Application.Run(new EnregistrementCassier());
         }
     }
 }

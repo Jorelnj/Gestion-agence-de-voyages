@@ -13,9 +13,9 @@ namespace Infosave.tiket
 {
     public class savetiket
     {
-        public static List<Tiket> Tikets;
+        public static List<Ticket> Tickets;
         private  FileInfo file;
-        private const string FILE_Name = @"data/Tikets.json";
+        private const string FILE_Name = @"data/Tickets.json";
       
 
         public savetiket()
@@ -37,19 +37,19 @@ namespace Infosave.tiket
             using(StreamReader sr = new StreamReader(file.FullName))   
                 {
                     string json = sr.ReadToEnd();
-                    Tikets = JsonConvert.DeserializeObject<List<Tiket>>(json);
+                    Tickets = JsonConvert.DeserializeObject<List<Ticket>>(json);
                 }
             }
 
-            if (Tikets == null)
+            if (Tickets == null)
             {
-                Tikets = new List<Tiket>();
+                Tickets = new List<Ticket>();
             }
         }
         
-        public void Add(Tiket tiket)
+        public void Add(Ticket tiket)
         {
-            Tikets.Add(tiket);
+            Tickets.Add(tiket);
            Save();
         }
 
@@ -57,20 +57,20 @@ namespace Infosave.tiket
         {
             using(StreamWriter sw = new StreamWriter(file.FullName, false))
             {
-                string json = JsonConvert.SerializeObject(Tikets);
+                string json = JsonConvert.SerializeObject(Tickets);
                 sw.WriteLine(json);
             }
         }
 
-        public void Delete (Tiket tiket)
+        public void Delete (Ticket tiket)
         {
-            Tikets.Remove(tiket);
+            Tickets.Remove(tiket);
             Save();
         }
 
-        public IEnumerable<Tiket> Find()
+        public IEnumerable<Ticket> Find()
         {
-            return new List<Tiket>(Tikets);
+            return new List<Ticket>(Tickets);
         }
 }
 }

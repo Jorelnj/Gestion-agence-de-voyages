@@ -5,17 +5,17 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport.Routier", "Transport.Routier\Transport.Routier.csproj", "{A0927403-1366-46E5-A970-E5EA34D7D6BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infosave.tiket", "Infosave.tiket\Infosave.tiket.csproj", "{27E3FD48-949C-40E6-8606-083889A85F73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoSaveTicket", "Infosave.tiket\InfoSaveTicket.csproj", "{27E3FD48-949C-40E6-8606-083889A85F73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tiket_transport", "tiket.de.transport\tiket_transport.csproj", "{255E93B8-9355-4319-A6FF-3FA3CF9911A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport.logique", "Transport.logique\Transport.logique.csproj", "{60704815-F72E-4634-ADA2-F15953FDE55E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frmtiket", "Frmtiket\Frmtiket.csproj", "{AFE6982D-EA10-441C-BD18-3DC83DDB8279}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmTicket", "Frmtiket\FrmTicket.csproj", "{AFE6982D-EA10-441C-BD18-3DC83DDB8279}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionAgenceV", "..\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj", "{CE93A1CD-47D9-466C-ADFF-B292895688B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parking", "..\parking_solution\parking\parking.csproj", "{F610480A-F664-440A-8BA3-338742DEF263}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking", "..\parking_solution\parking\Parking.csproj", "{F610480A-F664-440A-8BA3-338742DEF263}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caissiere", "Caissiere\Caissiere.csproj", "{D42A9DA9-00AD-48F0-B3C9-D55F503FBCE8}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caissiereclass", "caissiere
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoCaissiere", "InfoCaissiere\InfoCaissiere.csproj", "{B4299EA6-9FE9-49DA-8097-09912AE29434}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caissierlogique", "caissierlogique\caissierlogique.csproj", "{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaissierLogique", "caissierlogique\CaissierLogique.csproj", "{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

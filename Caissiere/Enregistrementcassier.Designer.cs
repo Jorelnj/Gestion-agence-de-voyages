@@ -1,6 +1,6 @@
 ﻿namespace Caissiere
 {
-    partial class Enregistrementcassier
+    partial class EnregistrementCassier
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

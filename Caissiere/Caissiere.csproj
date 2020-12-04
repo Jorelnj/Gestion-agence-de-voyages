@@ -52,16 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enregistrementcassier.cs">
+    <Compile Include="EnregistrementCassier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Enregistrementcassier.Designer.cs">
-      <DependentUpon>Enregistrementcassier.cs</DependentUpon>
+    <Compile Include="EnregistrementCassier.Designer.cs">
+      <DependentUpon>EnregistrementCassier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Enregistrementcassier.resx">
-      <DependentUpon>Enregistrementcassier.cs</DependentUpon>
+    <EmbeddedResource Include="EnregistrementCassier.resx">
+      <DependentUpon>EnregistrementCassier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,9 +98,9 @@
       <Project>{d409d571-2ecc-4abc-af87-860912c2c401}</Project>
       <Name>caissiereclass</Name>
     </ProjectReference>
-    <ProjectReference Include="..\caissierlogique\caissierlogique.csproj">
+    <ProjectReference Include="..\caissierlogique\CaissierLogique.csproj">
       <Project>{db21a23c-59f8-4e59-b934-cb5d5fa7ac5a}</Project>
-      <Name>caissierlogique</Name>
+      <Name>CaissierLogique</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
