@@ -15,6 +15,7 @@ namespace Frmticket
 {
     public partial class FormTicketList : Form
     {
+        private TicketLogique ticketLogique;
         public FormTicketList()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Frmticket
         private void loadData()
         {
             string value = txtSearch.Text.ToLower();
-            var tickets = TicketLogique.GetBy
+            var tickets = ticketLogique.GetBy
             (
                 x =>
                 x.Nom.ToLower().Contains(value) ||
