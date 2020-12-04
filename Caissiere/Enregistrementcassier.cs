@@ -52,5 +52,10 @@ using caissiereclass;
 
             }
         }
+
+        private void Enregistrementcassier_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
