@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ticket_transport;
+using Transport.logique;
 
 namespace Frmticket
 {
@@ -19,7 +20,7 @@ namespace Frmticket
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -34,17 +35,17 @@ namespace Frmticket
 
         private void loadData()
         {
-            /*string value = txtSearch.Text.ToLower();
-            var tickets = productBLO.GetBy
+            string value = txtSearch.Text.ToLower();
+            var tickets = TicketLogique.GetBy
             (
                 x =>
-                x.Reference.ToLower().Contains(value) ||
-                x.Name.ToLower().Contains(value)
-            ).OrderBy(x => x.Reference).ToArray();
+                x.Nom.ToLower().Contains(value) ||
+                x.Prenom.ToLower().Contains(value)
+            ).OrderBy(x => x.Nom).ToArray();
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = products;
+            dataGridView1.DataSource = tickets;
             lblRowCount.Text = $"{dataGridView1.RowCount} rows";
-            dataGridView1.ClearSelection();*/
+            dataGridView1.ClearSelection();
         }
 
         private void btnNew_Click(object sender, EventArgs e)

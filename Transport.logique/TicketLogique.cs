@@ -30,6 +30,16 @@ namespace Transport.logique
            return ticketrepo.Find();
         }
 
+        public IEnumerable<Ticket> GetByNom(string nom)
+        {
+            return ticketrepo.Find(x => x.Nom == nom);
+        }
+
+        public IEnumerable<Ticket> GetBy(Func<Ticket, bool> predicate)
+        {
+            return ticketrepo.Find(predicate);
+        }
+
         public void EditTicket(Ticket oldTicket, Ticket newTicket)
         {
             ticketrepo.Set(oldTicket, newTicket);

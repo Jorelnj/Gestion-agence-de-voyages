@@ -89,5 +89,10 @@ namespace Infosave.ticket
         {
             return new List<Ticket>(tickets);
         }
-}
+
+        public IEnumerable<Ticket> Find(Func<Ticket, bool> predicate)
+        {
+            return new List<Ticket>(tickets.Where(predicate).ToArray());
+        }
+    }
 }

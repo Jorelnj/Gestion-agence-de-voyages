@@ -45,7 +45,7 @@
             this.pictureBox1.Image = global::Caissiere.Properties.Resources._2;
             this.pictureBox1.Location = new System.Drawing.Point(12, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(398, 247);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -97,6 +97,7 @@
             this.txtNom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNom.HoverState.Parent = this.txtNom;
             this.txtNom.Location = new System.Drawing.Point(569, 23);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
             this.txtNom.PlaceholderText = "";
@@ -187,7 +188,7 @@
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Enregistrement";
             // 
-            // Enregistrementcassier
+            // EnregistrementCassier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,7 +205,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Enregistrementcassier";
+            this.Name = "EnregistrementCassier";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Enregistrementcassier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -160,5 +160,80 @@ namespace Frmticket
         {
 
         }
+
+        private void btnsave_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Ticket newTicket = new Ticket
+                (
+                    txtnom.Text.ToUpper(),
+                    txtprenom.Text,
+                    txtage.Text,
+                    txtcni.Text,
+                    txtdepart.Text,
+                    txtarriver.Text,
+                    float.Parse(txtprix.Text),
+                    txtsexe.Text,
+                    txtTelephone.Text,
+                    txtsiege.Text,
+                    float.Parse(txtRemboussement.Text)
+                );
+                TicketLogique ticketLogique = new TicketLogique(ConfigurationManager.AppSettings["DbFolder"]);
+
+                if (this.oldTicket == null)
+                    ticketLogique.creationTicket(newTicket);
+                else
+                    ticketLogique.EditTicket(oldTicket, newTicket);
+
+                MessageBox.Show
+                (
+                    "sauvegarde reussit!",
+                    "configuration",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                if (callBack != null)
+                    callBack();
+                if (oldTicket != null)
+                    Close();
+
+                int b = 0;
+                boucle();
+                txtnumerotckit.Text = "N°000" + b.ToString() + a.ToString();
+
+                txtnom.Clear();
+                txtprenom.Clear();
+                txtage.Clear();
+                txtcni.Clear();
+                txtdepart.Clear();
+                txtage.Clear();
+                txtprix.Clear();
+                txtsexe.Clear();
+                txtnom.Focus();
+                txtTelephone.Clear();
+                txtRemboussement.Clear();
+                txtsiege.Clear();
+                txtarriver.Clear();
+                txtobservation.Clear();
+            }
+
+
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void bntcancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbQRCode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

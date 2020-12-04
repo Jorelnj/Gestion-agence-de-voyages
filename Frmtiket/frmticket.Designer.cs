@@ -56,6 +56,8 @@
             this.txtsiege = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsave = new Guna.UI2.WinForms.Guna2Button();
             this.bntcancel = new Guna.UI2.WinForms.Guna2Button();
+            this.pbQRCode = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbQRCode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -541,6 +543,7 @@
             this.btnsave.Size = new System.Drawing.Size(180, 45);
             this.btnsave.TabIndex = 12;
             this.btnsave.Text = "Enregistrer";
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click_1);
             // 
             // bntcancel
             // 
@@ -557,13 +560,26 @@
             this.bntcancel.Size = new System.Drawing.Size(180, 45);
             this.bntcancel.TabIndex = 14;
             this.bntcancel.Text = "annuler";
+            this.bntcancel.Click += new System.EventHandler(this.bntcancel_Click);
             // 
-            // frmticket
+            // pbQRCode
+            // 
+            this.pbQRCode.Location = new System.Drawing.Point(769, 12);
+            this.pbQRCode.Name = "pbQRCode";
+            this.pbQRCode.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbQRCode.ShadowDecoration.Parent = this.pbQRCode;
+            this.pbQRCode.Size = new System.Drawing.Size(154, 95);
+            this.pbQRCode.TabIndex = 30;
+            this.pbQRCode.TabStop = false;
+            this.pbQRCode.Click += new System.EventHandler(this.pbQRCode_Click);
+            // 
+            // FrmTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(967, 418);
+            this.Controls.Add(this.pbQRCode);
             this.Controls.Add(this.bntcancel);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtsiege);
@@ -594,9 +610,10 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmticket";
+            this.Name = "FrmTicket";
             this.Text = "z";
             this.Load += new System.EventHandler(this.frmticket_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbQRCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -632,6 +649,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtsiege;
         private Guna.UI2.WinForms.Guna2Button btnsave;
         private Guna.UI2.WinForms.Guna2Button bntcancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbQRCode;
     }
 }
 

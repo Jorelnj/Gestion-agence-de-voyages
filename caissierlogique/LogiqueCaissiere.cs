@@ -21,7 +21,7 @@ namespace caissierlogique
             caissiererepo.Add(caissiere);
         }
 
-        public void SupprimerTicket(Ccaissiere caissiere)
+        public void supprimerTiket(Ccaissiere caissiere)
         {
             caissiererepo.Delete(caissiere);
         }
