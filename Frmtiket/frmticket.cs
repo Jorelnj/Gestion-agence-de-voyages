@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -57,9 +58,8 @@ namespace Frmticket
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            
-            try
-            {
+            /*try
+            {*/
                 Ticket newTicket = new Ticket
                 (
                 txtnom.Text.ToUpper(),
@@ -74,8 +74,13 @@ namespace Frmticket
                 txtsiege.Text,
                 float.Parse(txtRemboussement.Text)
                 );
-                ticketlogique ticketlogique = new ticketlogique();
-                ticketlogique.creationTicket(newTicket);
+                TicketLogique ticketLogique = new TicketLogique(ConfigurationManager.AppSettings["DbFolder"]);
+
+                if (this.oldTicket == null)
+                    ticketLogique.creationTicket(newTicket);
+                else
+                    ticketLogique.EditTicket(oldTicket, newTicket);
+
                 MessageBox.Show
                 (
                     "sauvegarde reussit!",
@@ -83,6 +88,11 @@ namespace Frmticket
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
+
+                if (callBack != null)
+                    callBack();
+                if (oldTicket != null)
+                    Close();
 
                 int b = 0;
                 boucle();
@@ -102,11 +112,12 @@ namespace Frmticket
                 txtsiege.Clear();
                 txtarriver.Clear();
                 txtobservation.Clear();
-            }
+            /*}
+
             catch(Exception)
             {
 
-            }
+            }*/
             
         }
 

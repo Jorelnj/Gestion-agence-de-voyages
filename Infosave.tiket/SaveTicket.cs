@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -13,14 +14,15 @@ namespace Infosave.ticket
 {
     public class saveTicket
     {
-        public static List<Ticket> Tickets;
-        private  FileInfo file;
-        private const string FILE_Name = @"data/Tickets.json";
-      
+        private static List<Ticket> tickets;
+        private const string FILE_Name = @"tickets.json";
+        private readonly string dbFolder;
+        private FileInfo file;
 
-        public saveTicket()
+        public saveTicket(string dbFolder)
         {
-            file = new FileInfo(FILE_Name);
+            this.dbFolder = dbFolder;
+            file = new FileInfo(Path.Combine(this.dbFolder, FILE_Name));
             if (!file.Directory.Exists)
             {
                 file.Directory.Create();
@@ -37,40 +39,55 @@ namespace Infosave.ticket
             using(StreamReader sr = new StreamReader(file.FullName))   
                 {
                     string json = sr.ReadToEnd();
-                    Tickets = JsonConvert.DeserializeObject<List<Ticket>>(json);
+                    tickets = JsonConvert.DeserializeObject<List<Ticket>>(json);
                 }
             }
 
-            if (Tickets == null)
+            if (tickets == null)
             {
-                Tickets = new List<Ticket>();
+                tickets = new List<Ticket>();
             }
         }
-        
+
+        public void Set(Ticket oldTicket, Ticket newTicket)
+        {
+            var oldIndex = tickets.IndexOf(oldTicket);
+            var newIndex = tickets.IndexOf(newTicket);
+            if (oldIndex < 0)
+                throw new KeyNotFoundException("Le produit n'existe pas !");
+            if (newIndex >= 0 && oldIndex != newIndex)
+                throw new DuplicateNameException("La référence de ce produit existe déjà");
+            tickets[oldIndex] = newTicket;
+            Save();
+        }
+
         public void Add(Ticket ticket)
         {
-            Tickets.Add(ticket);
-           Save();
+            var index = tickets.IndexOf(ticket);
+            if (index >= 0)
+                throw new DuplicateNameException("Ce ticket existe déjà !");
+            tickets.Add(ticket);
+            Save();
         }
 
         private void Save()
         {
             using(StreamWriter sw = new StreamWriter(file.FullName, false))
             {
-                string json = JsonConvert.SerializeObject(Tickets);
+                string json = JsonConvert.SerializeObject(tickets);
                 sw.WriteLine(json);
             }
         }
 
         public void Delete (Ticket ticket)
         {
-            Tickets.Remove(ticket);
+            tickets.Remove(ticket);
             Save();
         }
 
         public IEnumerable<Ticket> Find()
         {
-            return new List<Ticket>(Tickets);
+            return new List<Ticket>(tickets);
         }
 }
 }

@@ -16,17 +16,17 @@ namespace caissierlogique
         {
             caissiererepo = new SaveCaissiere();
         }
-        public void creationTicket(Caissiere caissiere)
+        public void creationTicket(Ccaissiere caissiere)
         {
             caissiererepo.Add(caissiere);
         }
 
-        public void SupprimerTicket(Caissiere caissiere)
+        public void SupprimerTicket(Ccaissiere caissiere)
         {
             caissiererepo.Delete(caissiere);
         }
 
-        public IEnumerable<Caissiere> GetAllTicket()
+        public IEnumerable<Ccaissiere> GetAllTicket()
         {
             return caissiererepo.Find();
         }

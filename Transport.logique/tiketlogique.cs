@@ -8,12 +8,12 @@ using ticket_transport;
 
 namespace Transport.logique
 {
-    public class ticketlogique
+    public class TicketLogique
     {
         saveTicket ticketrepo;
-        public ticketlogique()
+        public TicketLogique(string dbFolder)
         {
-            ticketrepo = new saveTicket();
+            ticketrepo = new saveTicket(dbFolder);
         }
     public void creationTicket(Ticket ticket)
         {
@@ -25,9 +25,14 @@ namespace Transport.logique
             ticketrepo.Delete(ticket);
         }
 
-        public IEnumerable<Ticket> GetAllTicket()
+        public IEnumerable<Ticket> GetAllTickets()
         {
            return ticketrepo.Find();
+        }
+
+        public void EditTicket(Ticket oldTicket, Ticket newTicket)
+        {
+            ticketrepo.Set(oldTicket, newTicket);
         }
     }
 }

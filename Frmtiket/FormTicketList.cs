@@ -102,5 +102,10 @@ namespace Frmticket
             Form f = new TicketPreview("TicketListRpt.rdlc", items);
             f.Show();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

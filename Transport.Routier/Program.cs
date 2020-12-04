@@ -1,6 +1,7 @@
 ﻿using Infosave.ticket;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Xml.Serialization;
 using ticket_transport;
 using Transport.logique;
@@ -9,11 +10,9 @@ namespace Transport.Routier
 {
     class Program
     {
-      
-
         static void Main(string[] args)
         {
-             string   Choice ="y";
+             string Choice ="y";
             do
             {
                 Console.Clear();
@@ -41,16 +40,12 @@ namespace Transport.Routier
                 string Remboussement = Console.ReadLine();
                 Console.Write("Entrer Le_Remboussement\t:");
 
-
-
-
-
                 Ticket ticket = new Ticket(Nom, Prenom, Age, NumeroCNI, ville_de_depart, ville_arriver, PrixTicket, sexe, siege, Remboussement, Telephone);
-                ticketlogique ticketlogique = new ticketlogique();
-                ticketlogique.creationTicket(ticket);
+                TicketLogique ticketLogique = new TicketLogique(ConfigurationManager.AppSettings["DbFolder"]);
+                ticketLogique.creationTicket(ticket);
 
 
-                IEnumerable<Ticket> tickets = ticketlogique.GetAllTicket();
+                IEnumerable<Ticket> tickets = ticketLogique.GetAllTickets();
                 foreach (Ticket T in tickets)
                 {
                     Console.WriteLine($"{T.Nom}\t\n {T.Prenom}\t\n");
