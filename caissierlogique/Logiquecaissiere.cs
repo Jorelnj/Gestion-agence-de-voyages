@@ -8,25 +8,25 @@ using System.Threading.Tasks;
 
 namespace caissierlogique
 {
-    public class Logiquecaissiere
+    public class LogiqueCaissiere
     {
 
         SaveCaissiere caissiererepo;
-        public Logiquecaissiere()
+        public LogiqueCaissiere()
         {
             caissiererepo = new SaveCaissiere();
         }
-        public void creationTiket(Ccaissiere caissiere)
+        public void creationTicket(Ccaissiere caissiere)
         {
             caissiererepo.Add(caissiere);
         }
 
-        public void supprimerTiket(Ccaissiere caissiere)
+        public void supprimerTicket(Ccaissiere caissiere)
         {
             caissiererepo.Delete(caissiere);
         }
 
-        public IEnumerable<Ccaissiere> GetAllTiket()
+        public IEnumerable<Ccaissiere> GetAllTicket()
         {
             return caissiererepo.Find();
         }
