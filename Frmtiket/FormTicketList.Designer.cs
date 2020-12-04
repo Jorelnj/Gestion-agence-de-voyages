@@ -88,25 +88,25 @@ namespace Frmticket
             // 
             // Column4
             // 
-            this.Column4.DataPropertyName = "numero_CNI";
+            this.Column4.DataPropertyName = "NumeroCNI";
             this.Column4.HeaderText = "NUMERO DE CNI";
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
-            this.Column5.DataPropertyName = "ville_de_Depart";
+            this.Column5.DataPropertyName = "VilleDepart";
             this.Column5.HeaderText = "VILLE DE DEPART";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            this.Column6.DataPropertyName = "ville_Arriver";
+            this.Column6.DataPropertyName = "VilleArrivee";
             this.Column6.HeaderText = "VILLE D\'ARRIVEE";
             this.Column6.Name = "Column6";
             // 
             // Column7
             // 
-            this.Column7.DataPropertyName = "prix_ticket";
+            this.Column7.DataPropertyName = "PrixTicket";
             this.Column7.HeaderText = "PRIX TICKET";
             this.Column7.Name = "Column7";
             // 
@@ -161,6 +161,7 @@ namespace Frmticket
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnPrint
             // 
@@ -171,6 +172,7 @@ namespace Frmticket
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnRefresh
             // 
@@ -181,7 +183,7 @@ namespace Frmticket
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.button4_Click);
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnDelete
             // 
@@ -219,6 +221,7 @@ namespace Frmticket
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormTicketList";
             this.Text = "FormTicketList";
+            this.Load += new System.EventHandler(this.FormTicketList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,10 +13,10 @@ namespace ticket_transport
             public string Nom { get; set; }
             public string Prenom { get; set; }
             public string Age { get; set; }
-            public string numero_CNI { get; set; }
-            public string ville_de_Depart { get; set; }
-            public string ville_Arriver { get; set; }
-            public float prix_ticket { get; set; }
+            public string NumeroCNI { get; set; }
+            public string VilleDepart { get; set; }
+            public string VilleArrivee { get; set; }
+            public float PrixTicket { get; set; }
             public string Sexe { get; set; }
             public string Telephone { get; set; }
             public string Siege { get; set; }
@@ -30,16 +30,16 @@ namespace ticket_transport
 
             }
 
-        public Ticket(string nom, string prenom, string age, string numero_CNI,
-            string ville_de_Depart, string ville_Arriver, float prix_ticket, string sexe, string telephone, string siege, float remboussement)
+        public Ticket(string nom, string prenom, string age, string NumeroCNI,
+            string VilleDepart, string VilleArrivee, float PrixTicket, string sexe, string telephone, string siege, float remboussement)
         {
             Nom = nom;
             Prenom = prenom;
             Age = age;
-            this.numero_CNI = numero_CNI;
-            this.ville_de_Depart = ville_de_Depart;
-            this.ville_Arriver = ville_Arriver;
-            this.prix_ticket = prix_ticket;
+            this.NumeroCNI = NumeroCNI;
+            this.VilleDepart = VilleDepart;
+            this.VilleArrivee = VilleArrivee;
+            this.PrixTicket = PrixTicket;
             Sexe = sexe;
             Telephone = telephone;
             Siege = siege;
@@ -49,12 +49,12 @@ namespace ticket_transport
         public override bool Equals(object obj)
             {
                 return obj is Ticket ticket &&
-                       numero_CNI == ticket.numero_CNI;
+                       NumeroCNI == ticket.NumeroCNI;
             }
 
             public override int GetHashCode()
             {
-                return 1442208734 + EqualityComparer<string>.Default.GetHashCode(numero_CNI);
+                return 1442208734 + EqualityComparer<string>.Default.GetHashCode(NumeroCNI);
             }
 
 

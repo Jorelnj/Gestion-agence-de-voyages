@@ -24,14 +24,14 @@ namespace Transport.Routier
                 string Prenom = Console.ReadLine();
                 Console.Write("Entrer Age\t:");
                 string Age = Console.ReadLine();
-                Console.Write("Entrer numero_CNI\t:");
-                string numero_CNI = Console.ReadLine();
+                Console.Write("Entrer NumeroCNI\t:");
+                string NumeroCNI = Console.ReadLine();
                 Console.Write("Entrer Depart\t:");
                 string ville_de_depart = Console.ReadLine();
                 Console.Write("Entrer Arriver\t:");
                 string ville_arriver = Console.ReadLine();
-                Console.Write("Entrer prix_ticket\t:");
-                float prix_ticket = float.Parse(Console.ReadLine());
+                Console.Write("Entrer PrixTicket\t:");
+                float PrixTicket = float.Parse(Console.ReadLine());
                 Console.Write("Entrer  sexe\t:");
                 string sexe = Console.ReadLine();
                 Console.Write("Entrer  siege\t:");
@@ -45,7 +45,7 @@ namespace Transport.Routier
 
 
 
-                Ticket ticket = new Ticket(Nom, Prenom, Age, numero_CNI, ville_de_depart, ville_arriver, prix_ticket, sexe, siege, Remboussement, Telephone);
+                Ticket ticket = new Ticket(Nom, Prenom, Age, NumeroCNI, ville_de_depart, ville_arriver, PrixTicket, sexe, siege, Remboussement, Telephone);
                 ticketlogique ticketlogique = new ticketlogique();
                 ticketlogique.creationTicket(ticket);
 

@@ -38,11 +38,11 @@ namespace Frmticket
             txtage.Text = ticket.Age;
             txtsexe.Text = ticket.Sexe;
             txtTelephone.Text = ticket.Telephone;
-            txtcni.Text = ticket.numero_CNI;
-            txtdepart.Text = ticket.ville_de_Depart;
-            txtarriver.Text = ticket.ville_Arriver;
+            txtcni.Text = ticket.NumeroCNI;
+            txtdepart.Text = ticket.VilleDepart;
+            txtarriver.Text = ticket.VilleArrivee;
             txtsiege.Text = ticket.Siege;
-            txtprix.Text = ticket.prix_ticket.ToString();
+            txtprix.Text = ticket.PrixTicket.ToString();
             txtRemboussement.Text = ticket.Remboussement.ToString();
             txtobservation.Text = ticket.Observation;
 
@@ -60,9 +60,9 @@ namespace Frmticket
             
             try
             {
-                Ticket ticket = new Ticket
+                Ticket newTicket = new Ticket
                 (
-                txtnom.Text,
+                txtnom.Text.ToUpper(),
                 txtprenom.Text,
                 txtage.Text, 
                 txtcni.Text,
@@ -72,12 +72,10 @@ namespace Frmticket
                 txtsexe.Text,
                 txtTelephone.Text,
                 txtsiege.Text,
-                 float.Parse(txtRemboussement.Text)
-
-
+                float.Parse(txtRemboussement.Text)
                 );
                 ticketlogique ticketlogique = new ticketlogique();
-                ticketlogique.creationTicket(ticket);
+                ticketlogique.creationTicket(newTicket);
                 MessageBox.Show
                 (
                     "sauvegarde reussit!",
