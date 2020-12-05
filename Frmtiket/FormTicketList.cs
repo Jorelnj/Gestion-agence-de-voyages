@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace Frmticket
         public FormTicketList()
         {
             InitializeComponent();
+            dataGridView1.AutoGenerateColumns = false;
+            ticketLogique = new TicketLogique(ConfigurationManager.AppSettings["DbFolder"]);
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -57,7 +60,7 @@ namespace Frmticket
 
         private void FormTicketList_Load(object sender, EventArgs e)
         {
-
+            loadData();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -107,7 +110,23 @@ namespace Frmticket
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                if (
+                    MessageBox.Show
+                      (
+                        "Voulez-vous réellement supprimer ce ticket?",
+                        "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                      ) == DialogResult.Yes
+                    )
+                {
+                    for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+                    {
+                        ticketLogique.SupprimerTicket(dataGridView1.SelectedRows[i].DataBoundItem as Ticket);
+                    }
+                    loadData();
+                }
+            }
         }
     }
 }

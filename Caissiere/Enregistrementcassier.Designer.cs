@@ -35,18 +35,17 @@
             this.txtNom = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTelephone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrenom = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAnnuler = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEnregistrer = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Caissiere.Properties.Resources._2;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(46, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(398, 247);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(265, 190);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,37 +155,38 @@
             this.txtPrenom.Size = new System.Drawing.Size(222, 34);
             this.txtPrenom.TabIndex = 1;
             // 
-            // guna2Button2
+            // btnAnnuler
             // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Firebrick;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(633, 318);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(159, 47);
-            this.guna2Button2.TabIndex = 4;
-            this.guna2Button2.Text = "Annuler";
+            this.btnAnnuler.BorderRadius = 20;
+            this.btnAnnuler.CheckedState.Parent = this.btnAnnuler;
+            this.btnAnnuler.CustomImages.Parent = this.btnAnnuler;
+            this.btnAnnuler.FillColor = System.Drawing.Color.Firebrick;
+            this.btnAnnuler.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnuler.ForeColor = System.Drawing.Color.White;
+            this.btnAnnuler.HoverState.Parent = this.btnAnnuler;
+            this.btnAnnuler.Location = new System.Drawing.Point(633, 318);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.ShadowDecoration.Parent = this.btnAnnuler;
+            this.btnAnnuler.Size = new System.Drawing.Size(159, 47);
+            this.btnAnnuler.TabIndex = 4;
+            this.btnAnnuler.Text = "Annuler";
             // 
-            // guna2Button1
+            // btnEnregistrer
             // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.LimeGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(443, 318);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(168, 47);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Enregistrement";
+            this.btnEnregistrer.BorderRadius = 20;
+            this.btnEnregistrer.CheckedState.Parent = this.btnEnregistrer;
+            this.btnEnregistrer.CustomImages.Parent = this.btnEnregistrer;
+            this.btnEnregistrer.FillColor = System.Drawing.Color.LimeGreen;
+            this.btnEnregistrer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnregistrer.ForeColor = System.Drawing.Color.White;
+            this.btnEnregistrer.HoverState.Parent = this.btnEnregistrer;
+            this.btnEnregistrer.Location = new System.Drawing.Point(443, 318);
+            this.btnEnregistrer.Name = "btnEnregistrer";
+            this.btnEnregistrer.ShadowDecoration.Parent = this.btnEnregistrer;
+            this.btnEnregistrer.Size = new System.Drawing.Size(168, 47);
+            this.btnEnregistrer.TabIndex = 3;
+            this.btnEnregistrer.Text = "Enregistrement";
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // EnregistrementCassier
             // 
@@ -194,8 +194,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(804, 377);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.btnEnregistrer);
+            this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.txtPrenom);
             this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtNom);
@@ -223,8 +223,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtNom;
         private Guna.UI2.WinForms.Guna2TextBox txtTelephone;
         private Guna.UI2.WinForms.Guna2TextBox txtPrenom;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnAnnuler;
+        private Guna.UI2.WinForms.Guna2Button btnEnregistrer;
     }
 }
 

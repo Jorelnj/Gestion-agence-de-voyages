@@ -186,6 +186,9 @@ namespace Frmticket
                 else
                     ticketLogique.EditTicket(oldTicket, newTicket);
 
+                Zen.Barcode.CodeQrBarcodeDraw qrCode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                pbQRCode.Image = qrCode.Draw(txtnom.Text, 50);
+
                 MessageBox.Show
                 (
                     "sauvegarde reussit!",
@@ -229,6 +232,11 @@ namespace Frmticket
         private void bntcancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtnom_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
 
         private void pbQRCode_Click(object sender, EventArgs e)

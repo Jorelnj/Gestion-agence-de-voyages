@@ -10,10 +10,10 @@ namespace Transport.logique
 {
     public class TicketLogique
     {
-        saveTicket ticketrepo;
+        SaveTicket ticketrepo;
         public TicketLogique(string dbFolder)
         {
-            ticketrepo = new saveTicket(dbFolder);
+            ticketrepo = new SaveTicket(dbFolder);
         }
     public void creationTicket(Ticket ticket)
         {

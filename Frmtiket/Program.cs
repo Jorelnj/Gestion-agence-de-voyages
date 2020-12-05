@@ -16,7 +16,7 @@ namespace Frmticket
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTicket());
+            Application.Run(new FormTicketList());
         }
     }
 }

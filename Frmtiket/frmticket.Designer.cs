@@ -56,7 +56,7 @@
             this.txtsiege = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsave = new Guna.UI2.WinForms.Guna2Button();
             this.bntcancel = new Guna.UI2.WinForms.Guna2Button();
-            this.pbQRCode = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pbQRCode = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,6 +227,7 @@
             this.txtnom.ShadowDecoration.Parent = this.txtnom;
             this.txtnom.Size = new System.Drawing.Size(148, 31);
             this.txtnom.TabIndex = 0;
+            this.txtnom.TextChanged += new System.EventHandler(this.txtnom_TextChanged_1);
             // 
             // txtnumerotckit
             // 
@@ -564,13 +565,12 @@
             // 
             // pbQRCode
             // 
-            this.pbQRCode.Location = new System.Drawing.Point(769, 12);
+            this.pbQRCode.Location = new System.Drawing.Point(729, 12);
             this.pbQRCode.Name = "pbQRCode";
-            this.pbQRCode.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbQRCode.ShadowDecoration.Parent = this.pbQRCode;
-            this.pbQRCode.Size = new System.Drawing.Size(154, 95);
+            this.pbQRCode.Size = new System.Drawing.Size(220, 121);
             this.pbQRCode.TabIndex = 30;
             this.pbQRCode.TabStop = false;
+            this.pbQRCode.WaitOnLoad = true;
             this.pbQRCode.Click += new System.EventHandler(this.pbQRCode_Click);
             // 
             // FrmTicket
@@ -649,7 +649,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtsiege;
         private Guna.UI2.WinForms.Guna2Button btnsave;
         private Guna.UI2.WinForms.Guna2Button bntcancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox pbQRCode;
+        private System.Windows.Forms.PictureBox pbQRCode;
     }
 }
 

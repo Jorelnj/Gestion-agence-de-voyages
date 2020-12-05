@@ -12,14 +12,14 @@ using ticket_transport;
 
 namespace Infosave.ticket
 {
-    public class saveTicket
+    public class SaveTicket
     {
         private static List<Ticket> tickets;
         private const string FILE_Name = @"tickets.json";
         private readonly string dbFolder;
         private FileInfo file;
 
-        public saveTicket(string dbFolder)
+        public SaveTicket(string dbFolder)
         {
             this.dbFolder = dbFolder;
             file = new FileInfo(Path.Combine(this.dbFolder, FILE_Name));
