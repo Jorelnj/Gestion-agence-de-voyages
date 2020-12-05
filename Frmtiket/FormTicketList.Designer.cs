@@ -53,6 +53,9 @@ namespace Frmticket
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -66,6 +69,7 @@ namespace Frmticket
             this.Column9});
             this.dataGridView1.Location = new System.Drawing.Point(26, 130);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(939, 331);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -74,54 +78,63 @@ namespace Frmticket
             this.Column1.DataPropertyName = "Nom";
             this.Column1.HeaderText = "NOM";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "Prenom";
             this.Column2.HeaderText = "PRENOM";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "Age";
             this.Column3.HeaderText = "AGE";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "NumeroCNI";
             this.Column4.HeaderText = "NUMERO DE CNI";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "VilleDepart";
             this.Column5.HeaderText = "VILLE DE DEPART";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.DataPropertyName = "VilleArrivee";
             this.Column6.HeaderText = "VILLE D\'ARRIVEE";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.DataPropertyName = "PrixTicket";
             this.Column7.HeaderText = "PRIX TICKET";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
             this.Column8.DataPropertyName = "Remboussement";
             this.Column8.HeaderText = "REMBOURSEMENT";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Column9
             // 
             this.Column9.DataPropertyName = "Siege";
             this.Column9.HeaderText = "SIEGE";
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // btnNew
             // 

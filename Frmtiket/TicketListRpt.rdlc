@@ -46,22 +46,22 @@
               <Width>3.41722cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.42264cm</Width>
+              <Width>4.02577cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.89687cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.89688cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.53188cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -78,7 +78,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>NOM</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -108,7 +111,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Prenom</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -138,7 +144,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>NumeroCNI</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -168,7 +177,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>VilleDepart</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -198,7 +210,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>VilleArrivee</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -228,7 +243,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>PrixTicket</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -258,7 +276,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Siege</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -288,7 +309,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Telephone</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -323,7 +347,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Nom.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -353,7 +380,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Prenom.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -383,7 +413,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!NumeroCNI.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -413,7 +446,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!VilleDepart.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -443,7 +479,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!VilleArrivee.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -473,7 +512,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!PrixTicket.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -503,7 +545,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Siege.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -533,7 +578,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Telephone.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -577,9 +625,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>1.63724cm</Top>
-        <Left>0.34078cm</Left>
+        <Left>1.01703cm</Left>
         <Height>1.2cm</Height>
-        <Width>23.83646cm</Width>
+        <Width>25.26522cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

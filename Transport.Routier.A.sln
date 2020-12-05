@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport.logique", "Transp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmTicket", "Frmtiket\FrmTicket.csproj", "{AFE6982D-EA10-441C-BD18-3DC83DDB8279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionAgenceV", "..\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj", "{CE93A1CD-47D9-466C-ADFF-B292895688B5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking", "..\parking_solution\parking\Parking.csproj", "{F610480A-F664-440A-8BA3-338742DEF263}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caissiere", "Caissiere\Caissiere.csproj", "{D42A9DA9-00AD-48F0-B3C9-D55F503FBCE8}"
@@ -24,6 +22,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoCaissiere", "InfoCaissiere\InfoCaissiere.csproj", "{B4299EA6-9FE9-49DA-8097-09912AE29434}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaissierLogique", "caissierlogique\CaissierLogique.csproj", "{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BO", "D:\GestionAgenceV\BO\BO.csproj", "{BA80B4FF-F957-4934-86C7-AD20D6015685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "D:\GestionAgenceV\DAL\DAL.csproj", "{D71DADCF-3C8B-41CF-A73F-5C48C420239F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionAgenceV", "D:\GestionAgenceV\GestionAgenceV\GestionAgenceV.csproj", "{CE93A1CD-47D9-466C-ADFF-B292895688B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +55,6 @@ Global
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE6982D-EA10-441C-BD18-3DC83DDB8279}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F610480A-F664-440A-8BA3-338742DEF263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F610480A-F664-440A-8BA3-338742DEF263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F610480A-F664-440A-8BA3-338742DEF263}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +75,18 @@ Global
 		{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB21A23C-59F8-4E59-B934-CB5D5FA7AC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA80B4FF-F957-4934-86C7-AD20D6015685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA80B4FF-F957-4934-86C7-AD20D6015685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA80B4FF-F957-4934-86C7-AD20D6015685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA80B4FF-F957-4934-86C7-AD20D6015685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71DADCF-3C8B-41CF-A73F-5C48C420239F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71DADCF-3C8B-41CF-A73F-5C48C420239F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71DADCF-3C8B-41CF-A73F-5C48C420239F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71DADCF-3C8B-41CF-A73F-5C48C420239F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE93A1CD-47D9-466C-ADFF-B292895688B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

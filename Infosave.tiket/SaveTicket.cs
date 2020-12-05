@@ -22,7 +22,7 @@ namespace Infosave.ticket
         public SaveTicket(string dbFolder)
         {
             this.dbFolder = dbFolder;
-            file = new FileInfo(Path.Combine(this.dbFolder, FILE_Name));
+            file = new FileInfo(FILE_Name);
             if (!file.Directory.Exists)
             {
                 file.Directory.Create();
