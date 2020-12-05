@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="TicketLogique.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypingException.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Infosave.tiket\InfoSaveTicket.csproj">

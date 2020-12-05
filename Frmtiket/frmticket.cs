@@ -121,6 +121,27 @@ namespace Frmticket
             
         }
 
+        private void checkForm()
+        {
+            string text = string.Empty;
+            txtnom.BackColor = Color.White;
+            txtprenom.BackColor = Color.White;
+            if (string.IsNullOrWhiteSpace(txtnom.Text))
+            {
+                text += "- Please, entrer une bonne référence !\n";
+                txtnom.BackColor = Color.Aqua;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtprenom.Text))
+            {
+                text += "- Please, entrer le nom !\n";
+                txtprenom.BackColor = Color.Red;
+            }
+
+            if (!string.IsNullOrEmpty(text))
+                throw new TypingException(text);
+        }
+
         private void btncancel_Click(object sender, EventArgs e)
         {
             this.Close();
