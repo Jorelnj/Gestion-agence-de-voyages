@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 146);
+            this.label1.Location = new System.Drawing.Point(19, 237);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 20);
@@ -75,7 +75,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 192);
+            this.label2.Location = new System.Drawing.Point(19, 283);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
@@ -86,7 +86,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 234);
+            this.label3.Location = new System.Drawing.Point(19, 325);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 20);
@@ -97,7 +97,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(331, 198);
+            this.label4.Location = new System.Drawing.Point(336, 289);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 20);
@@ -108,7 +108,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 275);
+            this.label5.Location = new System.Drawing.Point(19, 366);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 20);
@@ -119,7 +119,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(676, 286);
+            this.label6.Location = new System.Drawing.Point(681, 377);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 20);
@@ -130,19 +130,19 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(712, 192);
+            this.label7.Location = new System.Drawing.Point(717, 283);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 20);
+            this.label7.Size = new System.Drawing.Size(76, 20);
             this.label7.TabIndex = 19;
-            this.label7.Text = "prix ticket";
+            this.label7.Text = "Prix ticket";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(681, 139);
+            this.label8.Location = new System.Drawing.Point(686, 230);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 20);
@@ -153,7 +153,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(331, 281);
+            this.label9.Location = new System.Drawing.Point(336, 372);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 20);
@@ -164,7 +164,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(331, 234);
+            this.label10.Location = new System.Drawing.Point(336, 325);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 20);
@@ -185,18 +185,18 @@
             // 
             this.lblTel.AutoSize = true;
             this.lblTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTel.Location = new System.Drawing.Point(331, 146);
+            this.lblTel.Location = new System.Drawing.Point(336, 237);
             this.lblTel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(84, 20);
             this.lblTel.TabIndex = 25;
-            this.lblTel.Text = "Télèphone";
+            this.lblTel.Text = "Téléphone";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(657, 234);
+            this.label12.Location = new System.Drawing.Point(662, 325);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(131, 20);
@@ -219,7 +219,7 @@
             this.txtnom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtnom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnom.HoverState.Parent = this.txtnom;
-            this.txtnom.Location = new System.Drawing.Point(114, 139);
+            this.txtnom.Location = new System.Drawing.Point(119, 230);
             this.txtnom.Name = "txtnom";
             this.txtnom.PasswordChar = '\0';
             this.txtnom.PlaceholderText = "";
@@ -253,6 +253,7 @@
             this.txtnumerotckit.ShadowDecoration.Parent = this.txtnumerotckit;
             this.txtnumerotckit.Size = new System.Drawing.Size(301, 31);
             this.txtnumerotckit.TabIndex = 13;
+            this.txtnumerotckit.TextChanged += new System.EventHandler(this.txtnumerotckit_TextChanged_1);
             // 
             // txtage
             // 
@@ -270,7 +271,7 @@
             this.txtage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtage.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtage.HoverState.Parent = this.txtage;
-            this.txtage.Location = new System.Drawing.Point(114, 231);
+            this.txtage.Location = new System.Drawing.Point(119, 322);
             this.txtage.Name = "txtage";
             this.txtage.PasswordChar = '\0';
             this.txtage.PlaceholderText = "";
@@ -295,7 +296,7 @@
             this.txtprenom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtprenom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtprenom.HoverState.Parent = this.txtprenom;
-            this.txtprenom.Location = new System.Drawing.Point(114, 185);
+            this.txtprenom.Location = new System.Drawing.Point(119, 276);
             this.txtprenom.Name = "txtprenom";
             this.txtprenom.PasswordChar = '\0';
             this.txtprenom.PlaceholderText = "";
@@ -320,7 +321,7 @@
             this.txtsexe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtsexe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsexe.HoverState.Parent = this.txtsexe;
-            this.txtsexe.Location = new System.Drawing.Point(114, 276);
+            this.txtsexe.Location = new System.Drawing.Point(119, 367);
             this.txtsexe.Name = "txtsexe";
             this.txtsexe.PasswordChar = '\0';
             this.txtsexe.PlaceholderText = "";
@@ -345,7 +346,7 @@
             this.txtTelephone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTelephone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelephone.HoverState.Parent = this.txtTelephone;
-            this.txtTelephone.Location = new System.Drawing.Point(431, 139);
+            this.txtTelephone.Location = new System.Drawing.Point(436, 230);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.PasswordChar = '\0';
             this.txtTelephone.PlaceholderText = "";
@@ -370,7 +371,7 @@
             this.txtcni.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtcni.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcni.HoverState.Parent = this.txtcni;
-            this.txtcni.Location = new System.Drawing.Point(431, 188);
+            this.txtcni.Location = new System.Drawing.Point(436, 279);
             this.txtcni.Name = "txtcni";
             this.txtcni.PasswordChar = '\0';
             this.txtcni.PlaceholderText = "";
@@ -395,7 +396,7 @@
             this.txtdepart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtdepart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdepart.HoverState.Parent = this.txtdepart;
-            this.txtdepart.Location = new System.Drawing.Point(431, 231);
+            this.txtdepart.Location = new System.Drawing.Point(436, 322);
             this.txtdepart.Name = "txtdepart";
             this.txtdepart.PasswordChar = '\0';
             this.txtdepart.PlaceholderText = "";
@@ -420,7 +421,7 @@
             this.txtarriver.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtarriver.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtarriver.HoverState.Parent = this.txtarriver;
-            this.txtarriver.Location = new System.Drawing.Point(431, 279);
+            this.txtarriver.Location = new System.Drawing.Point(436, 370);
             this.txtarriver.Name = "txtarriver";
             this.txtarriver.PasswordChar = '\0';
             this.txtarriver.PlaceholderText = "";
@@ -445,7 +446,7 @@
             this.txtRemboussement.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtRemboussement.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRemboussement.HoverState.Parent = this.txtRemboussement;
-            this.txtRemboussement.Location = new System.Drawing.Point(801, 231);
+            this.txtRemboussement.Location = new System.Drawing.Point(806, 322);
             this.txtRemboussement.Name = "txtRemboussement";
             this.txtRemboussement.PasswordChar = '\0';
             this.txtRemboussement.PlaceholderText = "";
@@ -470,7 +471,7 @@
             this.txtprix.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtprix.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtprix.HoverState.Parent = this.txtprix;
-            this.txtprix.Location = new System.Drawing.Point(801, 182);
+            this.txtprix.Location = new System.Drawing.Point(806, 273);
             this.txtprix.Name = "txtprix";
             this.txtprix.PasswordChar = '\0';
             this.txtprix.PlaceholderText = "";
@@ -495,7 +496,7 @@
             this.txtobservation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtobservation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtobservation.HoverState.Parent = this.txtobservation;
-            this.txtobservation.Location = new System.Drawing.Point(801, 276);
+            this.txtobservation.Location = new System.Drawing.Point(806, 367);
             this.txtobservation.Name = "txtobservation";
             this.txtobservation.PasswordChar = '\0';
             this.txtobservation.PlaceholderText = "";
@@ -520,7 +521,7 @@
             this.txtsiege.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtsiege.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsiege.HoverState.Parent = this.txtsiege;
-            this.txtsiege.Location = new System.Drawing.Point(801, 139);
+            this.txtsiege.Location = new System.Drawing.Point(806, 230);
             this.txtsiege.Name = "txtsiege";
             this.txtsiege.PasswordChar = '\0';
             this.txtsiege.PlaceholderText = "";
@@ -538,7 +539,7 @@
             this.btnsave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
             this.btnsave.HoverState.Parent = this.btnsave;
-            this.btnsave.Location = new System.Drawing.Point(553, 358);
+            this.btnsave.Location = new System.Drawing.Point(558, 449);
             this.btnsave.Name = "btnsave";
             this.btnsave.ShadowDecoration.Parent = this.btnsave;
             this.btnsave.Size = new System.Drawing.Size(180, 45);
@@ -555,19 +556,19 @@
             this.bntcancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntcancel.ForeColor = System.Drawing.Color.White;
             this.bntcancel.HoverState.Parent = this.bntcancel;
-            this.bntcancel.Location = new System.Drawing.Point(769, 358);
+            this.bntcancel.Location = new System.Drawing.Point(774, 449);
             this.bntcancel.Name = "bntcancel";
             this.bntcancel.ShadowDecoration.Parent = this.bntcancel;
             this.bntcancel.Size = new System.Drawing.Size(180, 45);
             this.bntcancel.TabIndex = 14;
-            this.bntcancel.Text = "annuler";
+            this.bntcancel.Text = "Annuler";
             this.bntcancel.Click += new System.EventHandler(this.bntcancel_Click);
             // 
             // pbQRCode
             // 
-            this.pbQRCode.Location = new System.Drawing.Point(729, 12);
+            this.pbQRCode.Location = new System.Drawing.Point(721, 12);
             this.pbQRCode.Name = "pbQRCode";
-            this.pbQRCode.Size = new System.Drawing.Size(220, 121);
+            this.pbQRCode.Size = new System.Drawing.Size(233, 179);
             this.pbQRCode.TabIndex = 30;
             this.pbQRCode.TabStop = false;
             this.pbQRCode.WaitOnLoad = true;
@@ -578,7 +579,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(967, 418);
+            this.ClientSize = new System.Drawing.Size(967, 514);
             this.Controls.Add(this.pbQRCode);
             this.Controls.Add(this.bntcancel);
             this.Controls.Add(this.btnsave);

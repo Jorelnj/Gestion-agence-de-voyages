@@ -208,7 +208,7 @@ namespace Frmticket
                     ticketLogique.EditTicket(oldTicket, newTicket);
 
                 Zen.Barcode.CodeQrBarcodeDraw qrCode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pbQRCode.Image = qrCode.Draw(txtnom.Text, 50);
+                pbQRCode.Image = qrCode.Draw(txtnom.Text, 30);
 
                 MessageBox.Show
                 (
@@ -261,6 +261,11 @@ namespace Frmticket
         }
 
         private void pbQRCode_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnumerotckit_TextChanged_1(object sender, EventArgs e)
         {
 
         }

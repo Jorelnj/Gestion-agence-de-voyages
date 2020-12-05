@@ -26,7 +26,7 @@ namespace Frmticket
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-
+            loadData();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -127,6 +127,11 @@ namespace Frmticket
                     loadData();
                 }
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
